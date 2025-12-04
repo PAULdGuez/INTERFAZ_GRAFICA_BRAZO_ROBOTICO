@@ -15,13 +15,38 @@
     <link rel="stylesheet" href="img/icons/css/fontello.css">
 </head>
 <body>
-    <section>
-        <div class="container">
-            <div class="row">
-                
-            </div>
+    <div class="qt-tabwidget">
+
+        <div class="qt-tabs">
+            <div class="qt-tab active" onclick="openTab(event, 'tab1')" style="color: white;">CONTROL ANGULAR</div>
+            <div class="qt-tab" onclick="openTab(event, 'tab2')" style="color: white">CONTROL POR EJE</div>
         </div>
-    </section>
-    
+
+        <div class="qt-content">
+
+            <div id="tab1" class="qt-panel active">
+                <p style="color:white">Movimientos circulaes: Control directo sobre los servosmotores</p>
+                <div class="sliders" style="color:white">
+                    <label>X:</label>
+                    <input type="range" min="-1500" max="1500" value="0" id="sliderX">
+
+                    <label>Y:</label>
+                    <input type="range" min="-1500" max="1500" value="-7" id="sliderY">
+
+                    <label>Z:</label>
+                    <input type="range" min="100" max="2030" value="1070" id="sliderZ">
+                </div>
+            </div>
+
+            <div id="tab2" class="qt-panel">
+                <p style="color:white">Movimientos lineales</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/index.js" ></script>
+    <script src="ext/bootstrap/js/bootstrap.bundle.min.js" ></script>
 </body>
 </html>
