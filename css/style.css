@@ -13,6 +13,7 @@ body{
     border: 3px solid white;
     border-radius: 10px;
     background: #2b2b2b;
+    position: relative;
 }
 
 /* TABS SUPERIORES */
@@ -69,4 +70,9 @@ body{
     gap: 5px;
 }
 
-
+.sliders_lineales {
+    width: 80%;
+    margin: 1px auto 0 auto; /* centra y lo baja */
+    display: flex;
+    gap: 5px;
+}

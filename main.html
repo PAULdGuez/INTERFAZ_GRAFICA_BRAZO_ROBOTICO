@@ -27,6 +27,20 @@
             <div id="tab1" class="qt-panel active">
                 <p style="color:white">Movimientos circulaes: Control directo sobre los servosmotores</p>
                 <div class="sliders" style="color:white">
+                    <label>θ<sub>1</sub>:</label>
+                    <input type="range" min="0" max="180" value="90" id="slider1">
+
+                    <label>θ<sub>2</sub>:</label>
+                    <input type="range" min="20" max="180" value="45" id="slider2">
+
+                    <label>θ<sub>3</sub>:</label>
+                    <input type="range" min="0" max="180" value="90" id="slider3">
+                </div>
+            </div>
+
+            <div id="tab2" class="qt-panel">
+                <p style="color:white">Movimientos lineales</p>
+                <div class="sliders_lineales" style="color:white">
                     <label>X:</label>
                     <input type="range" min="-1500" max="1500" value="0" id="sliderX">
 
@@ -36,10 +50,6 @@
                     <label>Z:</label>
                     <input type="range" min="100" max="2030" value="1070" id="sliderZ">
                 </div>
-            </div>
-
-            <div id="tab2" class="qt-panel">
-                <p style="color:white">Movimientos lineales</p>
             </div>
 
         </div>
