@@ -5,7 +5,14 @@ body{
     padding: 0;
 }
 
-
+.top-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: white;
+    font-family: arial Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 /* Marco general */
 .qt-tabwidget {
     width: 650px;

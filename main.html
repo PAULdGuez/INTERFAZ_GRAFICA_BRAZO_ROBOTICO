@@ -15,45 +15,52 @@
     <link rel="stylesheet" href="img/icons/css/fontello.css">
 </head>
 <body>
-    <div class="qt-tabwidget">
+    <div class="contenedor" style="color: white;">
 
-        <div class="qt-tabs">
-            <div class="qt-tab active" onclick="openTab(event, 'tab1')" style="color: white;">CONTROL ANGULAR</div>
-            <div class="qt-tab" onclick="openTab(event, 'tab2')" style="color: white">CONTROL POR EJE</div>
+        <div class="top-title">
+        COSECHADOR DE AGUACATES
         </div>
 
-        <div class="qt-content">
+        <div class="qt-tabwidget">
 
-            <div id="tab1" class="qt-panel active">
-                <p style="color:white">Movimientos circulaes: Control directo sobre los servosmotores</p>
-                <div class="sliders" style="color:white">
-                    <label>θ<sub>1</sub>:</label>
-                    <input type="range" min="0" max="180" value="90" id="slider1">
-
-                    <label>θ<sub>2</sub>:</label>
-                    <input type="range" min="20" max="180" value="45" id="slider2">
-
-                    <label>θ<sub>3</sub>:</label>
-                    <input type="range" min="0" max="180" value="90" id="slider3">
-                </div>
+            <div class="qt-tabs">
+                <div class="qt-tab active" onclick="openTab(event, 'tab1')" style="color: white;">CONTROL ANGULAR</div>
+                <div class="qt-tab" onclick="openTab(event, 'tab2')" style="color: white">CONTROL POR EJE</div>
             </div>
 
-            <div id="tab2" class="qt-panel">
-                <p style="color:white">Movimientos lineales</p>
-                <div class="sliders_lineales" style="color:white">
-                    <label>X:</label>
-                    <input type="range" min="-1500" max="1500" value="0" id="sliderX">
+            <div class="qt-content">
 
-                    <label>Y:</label>
-                    <input type="range" min="-1500" max="1500" value="-7" id="sliderY">
+                <div id="tab1" class="qt-panel active">
+                    <p style="color:white">Movimientos circulaes: Control directo sobre los servosmotores</p>
+                    <div class="sliders" style="color:white">
+                        <label>θ<sub>1</sub>:</label>
+                        <input type="range" min="0" max="180" value="90" id="slider1">
 
-                    <label>Z:</label>
-                    <input type="range" min="100" max="2030" value="1070" id="sliderZ">
+                        <label>θ<sub>2</sub>:</label>
+                        <input type="range" min="20" max="180" value="45" id="slider2">
+
+                        <label>θ<sub>3</sub>:</label>
+                        <input type="range" min="0" max="180" value="90" id="slider3">
+                    </div>
                 </div>
+
+                <div id="tab2" class="qt-panel">
+                    <p style="color:white">Movimientos lineales</p>
+                    <div class="sliders_lineales" style="color:white">
+                        <label>X:</label>
+                        <input type="range" min="-1500" max="1500" value="0" id="sliderX">
+
+                        <label>Y:</label>
+                        <input type="range" min="-1500" max="1500" value="-7" id="sliderY">
+
+                        <label>Z:</label>
+                        <input type="range" min="100" max="2030" value="1070" id="sliderZ">
+                    </div>
+                </div>
+
             </div>
 
         </div>
-
     </div>
 
     <script src="js/index.js" ></script>
